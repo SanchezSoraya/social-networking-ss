@@ -22,7 +22,12 @@ module.exports = {
     quotes: 'warn',
     '@typescript-eslint/explicit-function-return-type': 'off',
     'react/react-in-jsx-scope': 0,
-    'react/jsx-uses-react': 0
+    'react/jsx-uses-react': 0,
+    'react/jsx-indent': ['error', 2],
+    'react/jsx-curly-newline': ['error', {
+      multiline: 'consistent',
+      singleline: 'consistent'
+    }]
 
     // '@typescript-eslint/semi': 'off'    --- ; al final
 

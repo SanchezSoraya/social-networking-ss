@@ -1,13 +1,15 @@
 import 'antd/dist/reset.css'
-import { Button } from 'antd'
+import { HistoriesCard } from './components/HistoriesCard'
+import { historiesData } from './data/histories'
 
 function App () {
   const handleOnClick = () => {
     console.log('handleOnClick')
   }
+
   return (
-    <div>Hola
-      <Button onClick={handleOnClick} type="primary">Primary Button</Button>
+    <div>
+      <HistoriesCard histories={historiesData}/>
     </div>
 
   )
