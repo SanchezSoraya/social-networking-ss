@@ -7,14 +7,23 @@ interface UserCardProps {
 }
 export const UsersCard: FC<UserCardProps> = ({ users }) => {
   return (
-    <div>
+    <div
+      style={{
+        display: 'flex',
+      }}
+    >
       {users.map((user, index) => {
         return (
-          <UserCard key={index} firstname={user.firstname} lastname={user.lastname} age={user.age} email={user.email} gender={user.gender}/>
-
+          <UserCard
+            key={index}
+            firstname={user.firstname}
+            lastname={user.lastname}
+            age={user.age}
+            email={user.email}
+            gender={user.gender}
+          />
         )
       })}
-
     </div>
   )
 }

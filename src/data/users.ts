@@ -6,27 +6,27 @@ export const UsersData: IUser[] = [
     lastname: 'Perez',
     age: 25,
     email: 'andresPerez@gmail.com',
-    gender: 'M'
+    gender: 'M',
   },
   {
     firstname: 'Carla',
     lastname: 'Monterrey',
     age: 30,
     email: 'carlamonterrey@gmail.com',
-    gender: 'F'
+    gender: 'F',
   },
   {
     firstname: 'Jorge',
     lastname: 'Castillo',
     age: 40,
     email: 'jorgecastillo@gmail.com',
-    gender: 'M'
+    gender: 'M',
   },
   {
     firstname: 'Tatiana',
     lastname: 'Fonseca',
     age: 35,
     email: 'tatianafonseca@gmail.com',
-    gender: 'F'
-  }
+    gender: 'F',
+  },
 ]

@@ -1,22 +1,16 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true
+    es2021: true,
   },
-  extends: [
-    'plugin:react/recommended',
-    'standard-with-typescript'
-  ],
-  overrides: [
-  ],
+  extends: ['plugin:react/recommended', 'standard-with-typescript'],
+  overrides: [],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
-    project: 'tsconfig.json'
+    project: 'tsconfig.json',
   },
-  plugins: [
-    'react'
-  ],
+  plugins: ['react'],
   rules: {
     '@typescript-eslint/no-unused-vars': 'warn',
     quotes: 'warn',
@@ -24,12 +18,23 @@ module.exports = {
     'react/react-in-jsx-scope': 0,
     'react/jsx-uses-react': 0,
     'react/jsx-indent': ['error', 2],
-    'react/jsx-curly-newline': ['error', {
-      multiline: 'consistent',
-      singleline: 'consistent'
-    }]
+    'react/jsx-curly-newline': [
+      'error',
+      {
+        multiline: 'consistent',
+        singleline: 'consistent',
+      },
+    ],
+    'react/jsx-tag-spacing': [
+      'error',
+      {
+        closingSlash: 'never',
+        beforeSelfClosing: 'always',
+        afterOpening: 'never',
+        beforeClosing: 'never',
+      },
+    ],
 
     // '@typescript-eslint/semi': 'off'    --- ; al final
-
-  }
+  },
 }

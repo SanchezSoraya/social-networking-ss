@@ -11,9 +11,15 @@ export const HistoriesCard: FC<HistoryCardProps> = ({ histories }) => {
     <div>
       {histories.map((history, index) => {
         return (
-          <HistoryCard key={index} description={history.description} title={history.title} username= {history.username} imageURL= {history.imageURL}/>
+          <HistoryCard
+            key={index}
+            description={history.description}
+            title={history.title}
+            username={history.username}
+            imageURL={history.imageURL}
+          />
         )
-      }) }
+      })}
     </div>
   )
 }

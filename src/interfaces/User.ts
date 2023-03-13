@@ -4,5 +4,4 @@ export interface IUser {
   age: number
   email: string
   gender: 'M' | 'F'
-
 }

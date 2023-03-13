@@ -1,22 +1,12 @@
 import 'antd/dist/reset.css'
-import { HistoriesCard } from './components/HistoriesCard'
-import { historiesData } from './data/histories'
-import { UsersData } from './data/users'
-import { UsersCard } from './components/UsersCard'
-import { CreateUser } from './components/CreateUser'
+import { RouterProvider } from 'react-router-dom'
+import { router } from './routes'
 
-function App () {
-  const handleOnClick = () => {
-    console.log('handleOnClick')
-  }
-
+function App() {
   return (
     <div>
-      {/* <HistoriesCard histories={historiesData}/>
-      <UsersCard users={UsersData}/> */}
-      <CreateUser/>
+      <RouterProvider router={router} />
     </div>
-
   )
 }
 
