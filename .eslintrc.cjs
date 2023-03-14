@@ -12,6 +12,7 @@ module.exports = {
   },
   plugins: ['react'],
   rules: {
+    '@typescript-eslint/consistent-type-assertions': 'off',
     '@typescript-eslint/no-unused-vars': 'warn',
     quotes: 'warn',
     '@typescript-eslint/explicit-function-return-type': 'off',
